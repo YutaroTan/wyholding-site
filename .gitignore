@@ -1,4 +1,6 @@
 .DS_Store
 .user.ini
 node_modules/
+.next/
 *.log
+.env*
