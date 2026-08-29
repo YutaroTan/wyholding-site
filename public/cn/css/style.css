@@ -224,6 +224,15 @@
     background-size: cover;
 }
 
+.group-structure-header {
+    background: linear-gradient(rgba(6, 3, 21, .55), rgba(6, 3, 21, .55)), url(../img/carousel-2.jpg) center bottom no-repeat;
+    background-size: cover;
+}
+
+.group-structure-header .text-white-85 {
+    color: rgba(255, 255, 255, .85);
+}
+
 .breadcrumb-item + .breadcrumb-item::before {
     color: var(--light);
 }
