@@ -70,7 +70,45 @@
     font-weight: normal;
 }
 
+/*** Topbar ***/
+.topbar {
+    background: linear-gradient(180deg, var(--primary) 0%, var(--dark) 100%);
+    padding: 7px 0;
+    font-size: 13px;
+    letter-spacing: .3px;
+}
+
+.topbar .topbar-phone {
+    color: rgba(255, 255, 255, .9);
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.topbar .topbar-phone i {
+    color: var(--secondary);
+}
+
+.topbar .topbar-phone:hover {
+    color: var(--secondary);
+}
+
+.topbar .language-switch a {
+    color: rgba(255, 255, 255, .8);
+    text-decoration: none;
+    transition: .3s;
+}
+
+.topbar .language-switch a:hover {
+    color: var(--secondary);
+}
+
+
 /*** Navbar ***/
+nav.navbar.bg-white {
+    background-color: #F1F5FA !important;
+}
+
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
@@ -451,8 +489,64 @@
 
 /*** Footer ***/
 .footer {
-    background: linear-gradient(rgba(6, 3, 21, .5), rgba(6, 3, 21, .5)), url(../img/map.png) center center no-repeat;
-    background-size: cover;
+    position: relative;
+    background: linear-gradient(180deg, var(--primary) 0%, var(--dark) 100%);
+}
+
+.footer-waves {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    transform: translateY(-99%);
+    line-height: 0;
+    pointer-events: none;
+}
+
+.footer-waves svg {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-wave-parallax > use {
+    animation: footer-wave-move 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.footer-wave-parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.footer-wave-parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.footer-wave-parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.footer-wave-parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes footer-wave-move {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .footer-wave-parallax > use {
+        animation: none;
+    }
 }
 
 .footer .btn.btn-social {
