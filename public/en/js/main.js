@@ -20,8 +20,10 @@
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
             $('.sticky-top').css('top', '0px');
+            $('.navbar').addClass('navbar-dark-scroll');
         } else {
             $('.sticky-top').css('top', '-100px');
+            $('.navbar').removeClass('navbar-dark-scroll');
         }
     });
     
