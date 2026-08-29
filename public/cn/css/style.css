@@ -636,3 +636,106 @@ nav.navbar.bg-white {
         padding: 1rem;
     }
 }
+
+
+/*** Org Chart ***/
+.org-box {
+    background: #FFFFFF;
+    border: 1px solid #E7EBF2;
+    border-top: 4px solid var(--primary);
+    box-shadow: 0 0 25px rgba(0, 0, 0, .06);
+    padding: 1.35rem 1.25rem;
+    text-align: center;
+    height: 100%;
+}
+
+.org-box.org-box-platform {
+    border-top-color: var(--secondary);
+}
+
+.org-box h6 {
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: .35rem;
+    font-size: .95rem;
+}
+
+.org-box .org-box-location {
+    color: var(--secondary);
+    text-transform: uppercase;
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .5px;
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.org-box p {
+    color: #6c757d;
+    font-size: .85rem;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.org-connector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    opacity: .45;
+    font-size: 1.4rem;
+    height: 2rem;
+}
+
+
+/*** Operating Logic ***/
+.operating-logic-step {
+    background: #FFFFFF;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .06);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    height: 100%;
+}
+
+.operating-logic-step .step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #FFFFFF;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.operating-logic-step h5 {
+    margin-bottom: .75rem;
+}
+
+.operating-logic-step p {
+    color: #6c757d;
+    font-size: .9rem;
+    margin-bottom: 0;
+}
+
+.operating-logic-bg {
+    background: linear-gradient(rgba(248, 242, 240, .87), rgba(248, 242, 240, .87)), url(../img/operating-logic-bg.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.operating-logic-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary);
+    font-size: 1.5rem;
+}
+
+@media (max-width: 991.98px) {
+    .operating-logic-arrow {
+        transform: rotate(90deg);
+        margin: .5rem 0;
+    }
+}
