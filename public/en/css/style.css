@@ -170,6 +170,10 @@ nav.navbar.bg-white {
     height: 75px;
 }
 
+.navbar-brand img {
+    margin-right: .85rem;
+}
+
 .navbar-light .navbar-nav .nav-link {
     color: var(--dark);
     font-weight: 500;
