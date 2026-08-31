@@ -588,7 +588,13 @@ nav.navbar.bg-white {
 }
 
 .footer .btn.btn-social:hover {
-    color: var(--primary);
+    color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.footer span.btn.btn-social {
+    opacity: .4;
+    cursor: default;
 }
 
 .footer .btn.btn-link {
